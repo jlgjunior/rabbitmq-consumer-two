@@ -1,4 +1,4 @@
-package com.course.rabbitmqconsumertwo;
+package com.course.rabbitmqtwo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
