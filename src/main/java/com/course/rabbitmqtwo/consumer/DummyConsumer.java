@@ -8,13 +8,12 @@ import org.springframework.stereotype.Service;
 import com.course.rabbitmqtwo.entity.DummyMessage;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-@Service
+//@Service
 public class DummyConsumer {
 
 	private static final Logger logger = LoggerFactory.getLogger(DummyConsumer.class);
-	private ObjectMapper objectMapper = new ObjectMapper();
 	
-	@RabbitListener(queues = "q.dummy")
+	//@RabbitListener(queues = "q.dummy")
 	public void listenDummy(DummyMessage message) {
 		logger.info("{}", message);
 	}
