@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 
 import com.course.rabbitmqtwo.entity.DummyMessage;
 
-@Service
+//@Service
 public class DummyConsumerPrefetch {
 
 	private static final Logger logger = LoggerFactory.getLogger(DummyConsumerPrefetch.class);
 	
-	@RabbitListener(queues = "q.dummy", concurrency = "2")
+//	@RabbitListener(queues = "q.dummy", concurrency = "2")
 	public void listenDummy(DummyMessage message) throws InterruptedException {
 		logger.info("Message is {}", message);
 		Thread.sleep(20000);
