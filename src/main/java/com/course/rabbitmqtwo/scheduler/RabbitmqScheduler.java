@@ -8,16 +8,16 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-@Service
-@EnableScheduling
+//@Service
+//@EnableScheduling
 public class RabbitmqScheduler {
 
-	@Autowired
+	//@Autowired
 	private RabbitListenerEndpointRegistry rabbitmqListenerEndpointRegistry;
 	
 	private static final Logger logger = LoggerFactory.getLogger(RabbitmqScheduler.class);
 	
-	@Scheduled(cron = "0 42 10 * * ?")
+	//@Scheduled(cron = "0 42 10 * * ?")
 	public void stopAll() {
 		rabbitmqListenerEndpointRegistry
 			.getListenerContainers()
