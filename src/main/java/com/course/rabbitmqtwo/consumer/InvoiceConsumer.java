@@ -25,4 +25,10 @@ public class InvoiceConsumer {
 
 		logger.info("Invoice paid: {}", message);
 	}
+	
+	@RabbitHandler(isDefault = true)
+	public void handleDefault(Object message) {
+
+		logger.info("Handling default: {}", message);
+	}
 }
